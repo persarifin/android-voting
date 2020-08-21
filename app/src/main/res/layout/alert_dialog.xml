@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text=" Warning"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textisi"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:text=""
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@id/texttitle"/>
+
+    <TextView
+        android:id="@+id/txtidcalon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:textAlignment="center"
+        android:layout_below="@id/texttitle"/>
+    <TextView
+        android:id="@+id/txtidmhs"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtidcalon"
+        android:layout_marginTop="20dp"
+        android:ems="16"
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#D81B60"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textisi"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="50dp"
+        android:textColor="#ffffff"
+        android:text="CANCEL" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textisi"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff"
+        android:text="OK"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

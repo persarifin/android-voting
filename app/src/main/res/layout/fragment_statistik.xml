@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatistikFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardat"
+        android:layout_marginTop="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/paslon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text=""
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presentase suara masuk"
+                android:textStyle="italic"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/paslon"
+                android:layout_marginTop="10dp"
+                android:gravity="center|left" />
+            <ProgressBar
+                android:id="@+id/statistik"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="280dp"
+                android:layout_marginStart="10dp"
+                android:progressBackgroundTint="#D883D3D0"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/isi"
+                android:scaleY="4">
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/persent"
+                android:layout_below="@id/isi"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/statistik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/orang"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statistik"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:id="@+id/chart"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/cardat">
+
+    </com.github.mikephil.charting.charts.PieChart>
+    <RelativeLayout
+    android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+    android:layout_marginBottom="30dp"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/pilih"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="30dp"
+        android:textColor="#ffffff"
+        android:text="Pilih"
+        android:textAllCaps="false"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:background="@drawable/button"
+        android:backgroundTint="#C85454"
+        android:layout_marginEnd="30dp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pilihf"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_send_24"
+        android:backgroundTint="#C85454"/>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

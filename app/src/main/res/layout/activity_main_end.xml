@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F4F4F4"
+    android:layout_height="match_parent"
+    tools:context=".Main_end">
+    <ProgressBar
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/namafb"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+            <TextView
+            android:id="@+id/head"
+                android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANDA MEMILIH "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/namafb"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/idmhs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/head"
+            android:textAlignment="center"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idmhs"
+            app:cardCornerRadius="5dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgpaslonend"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/logoend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/imgpaslonend"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btnend"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Home"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"/>
+</RelativeLayout>

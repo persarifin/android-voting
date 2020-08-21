@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_sheet"
+    android:background="#F4F4F4"
+    android:layout_height="match_parent"
+    tools:context=".Main_calon">
+
+   <ProgressBar
+       android:id="@+id/progresbar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:nestedScrollingEnabled="true"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            app:layout_scrollFlags = "scroll|exitUntilCollapsed" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/op"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Calon"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:gravity="center|left"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_below="@id/op"
+                    android:id="@+id/isi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Presentase suara masuk"
+                    android:textStyle="italic"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left" />
+                <ProgressBar
+                    android:id="@+id/statistik"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="300dp"
+                    android:layout_marginStart="10dp"
+                    android:progressBackgroundTint="#D883D3D0"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/isi"
+                    android:scaleY="4">
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/persent"
+                    android:layout_below="@id/isi"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/statistik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/pemilih"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statistik"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"/>
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_width="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/persentase"
+                    android:layout_below="@id/pemilih"
+                    android:layout_marginBottom="10dp">
+
+                </com.github.mikephil.charting.charts.PieChart>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

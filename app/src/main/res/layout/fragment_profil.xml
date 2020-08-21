@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F1F1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/paslon_nomor"/>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/paslon_nomor"
+        android:id="@+id/cardketua"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Profil Ketua"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_below="@id/header"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/textnamaketua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_account_box_black_24dp"
+                android:textSize="14sp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/header"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/img3" />
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textnamaketua"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/img3"
+                android:background="#C4C2C2" />
+
+            <TextView
+                android:id="@+id/textkelasketua"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_school_black_24dp"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/textnamaketua"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/img3" />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textkelasketua"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/img3"
+                android:background="#C4C2C2" />
+
+            <TextView
+                android:id="@+id/textjurusanketua"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textkelasketua"
+                android:drawableLeft="@drawable/ic_camera_black_24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/img3"
+                android:text=""
+                android:textSize="14sp" />
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textjurusanketua"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/img3"
+                android:background="#C4C2C2" />
+
+            <TextView
+                android:id="@+id/textjkketua"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_marginStart="20dp"
+                android:drawableLeft="@drawable/ic_baseline_wc_24"
+                android:layout_below="@id/textjurusanketua"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/img3" />
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textjkketua"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@id/img3"
+                android:background="#C4C2C2" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardwakil"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardketua"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:id="@+id/headerwakil"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Profil Wakil"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/headerwakil"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/textnamawakil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerwakil"
+                android:layout_marginStart="20dp"
+                android:drawableLeft="@drawable/ic_account_box_black_24dp"
+                android:layout_toEndOf="@id/img4"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textnamawakil"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/img4"
+                android:background="#C4C2C2" />
+
+            <TextView
+                android:id="@+id/textkelaswakil"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textnamawakil"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/img4"
+                android:drawableLeft="@drawable/ic_school_black_24dp"
+                android:text=""
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textkelaswakil"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/img4"
+                android:background="#C4C2C2" />
+
+            <TextView
+                android:id="@+id/textjurusanwakil"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textkelaswakil"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/img4"
+                android:drawableLeft="@drawable/ic_camera_black_24dp"
+                android:text=""
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textjurusanwakil"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/img4"
+                android:background="#C4C2C2" />
+
+
+            <TextView
+                android:id="@+id/textjkwakil"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textjurusanwakil"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/img4"
+                android:text=""
+                android:drawableLeft="@drawable/ic_baseline_wc_24"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textjkwakil"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@id/img4"
+                android:background="#C4C2C2" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardslogan"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardwakil">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#ffffff"
+                android:id="@+id/headerslogan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Slogan"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textslogan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/headerslogan"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAlignment="center"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardvisi"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardslogan">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/headervisi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Visi"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textvisi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/headervisi"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAlignment="center" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardvisi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/headermisi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Misi"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textmisi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/headermisi"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAlignment="center" />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/pilih"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:text="Pilih"
+            android:textAllCaps="false"
+            android:paddingStart="10dp"
+            android:textAlignment="textStart"
+            android:background="@drawable/button"
+            android:backgroundTint="#C85454"
+            android:layout_marginEnd="30dp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/pilihf"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_send_24"
+            android:backgroundTint="#C85454"/>
+
+    </RelativeLayout>
+</RelativeLayout>
